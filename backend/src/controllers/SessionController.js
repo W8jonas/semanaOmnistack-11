@@ -9,7 +9,9 @@ module.exports = {
         .first()
 
         if(!ong){
-            return Response.status(400).json({ error: 'FUDEU'})
+            return res.status(400).json({ error: 'FUDEU'})
         }
+
+        return res.json(ong)
     }
 }
